@@ -1,97 +1,3 @@
-// import { useState } from "react";
-// import axios from "axios";
-// import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-// import toast from "react-hot-toast";
-// import { Link,useNavigate } from "react-router-dom";
-
-// const SignupForm = () => {
-//   const [first, setFirst] = useState("");
-//   const [last, setLast] = useState("");
-//   const [email, setEmail] = useState("");
-//   const [password, setPassword] = useState("");
- 
-//   const navigate = useNavigate();
-
-  
-
-//   const handleSignup = async (e) => {
-//     e.preventDefault();
-//     try {
-//       const { data } = await axios.post(
-//         "http://localhost:4800/api/v1/signup/send",
-//         { first, last, email, password },
-//         {
-//           headers: {
-//             "Content-Type": "application/json",
-//           },
-//           withCredentials: true,
-//         }
-//       );
-//       toast.success(data.message);
-//       setFirst("");
-//       setLast("");
-//       setEmail("");
-//       setPassword("");
-//       navigate("/success"); // Redirect to login page after successful signup
-//     } catch (error) {
-//       toast.error(error.response.data.message);
-//     }
-//   };
-
-//   return (
-//     <section className="signup" id="signup">
-//       <div className="container">
-//         <div className="banner">
-//           <img src="/signup.png" alt="signup" />
-//         </div>
-//         <div className="banner">
-//           <div className="signup_form_box">
-//             <h1>Create an Account</h1>
-//             <form onSubmit={handleSignup}>
-//               <div>
-//                 <input
-//                   type="text"
-//                   placeholder="First Name"
-//                   value={first}
-//                   onChange={(e) => setFirst(e.target.value)}
-//                 />
-//                 <input
-//                   type="text"
-//                   placeholder="Last Name"
-//                   value={last}
-//                   onChange={(e) => setLast(e.target.value)}
-//                 />
-//               </div>
-//               <div>
-//                 <input
-//                   type="email"
-//                   placeholder="Email"
-//                   value={email}
-//                   onChange={(e) => setEmail(e.target.value)}
-//                 />
-//                 <input
-//                   type="password"
-//                   placeholder="Password"
-//                   value={password}
-//                   onChange={(e) => setPassword(e.target.value)}
-//                 />
-//               </div>
-//               <button type="submit">
-//                 Sign Up{" "}
-//                 <span>
-//                   <HiOutlineArrowNarrowRight />
-//                 </span>
-//               </button>
-//             </form>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default SignupForm;
-
 
 import  { useState } from 'react';
 import axios from 'axios';
@@ -146,7 +52,7 @@ const SignupForm = () => {
         <section className="login" id="login">
         <div className='welcome-header'>
                 
-                <img src="public/full_logo-removebg-preview.jpg" alt="" />
+                <img src="/full_logo-removebg-preview.jpg" alt=""/>
                 <h1>FEISTA FLAVOURS CUSINE </h1>
 
             </div>

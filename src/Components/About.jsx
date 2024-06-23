@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
-import $ from 'jquery'; // Import jQuery
-
+import $ from 'jquery'; 
 const About = () => {
-  // State to track if additional content is expanded
+  
   const [expanded, setExpanded] = useState(false);
 
   // Function to toggle the visibility of additional content
